@@ -1,19 +1,7 @@
 # Enhanced Landmark Detection in Oral and Maxillofacial CT and CBCT Scans: A Multi-Stage Global-Local Integration Approach
-\usepackage{graphicx}
 
-\begin{figure*}
-    \centering
-    \includegraphics[width=1\linewidth]{Fig1.pdf}
-    \caption{Workflow of the proposed method. The pipeline consists of three stages. In the first stage, the complete CT or CBCT images are input into an alignment network to focus the images on the craniofacial region. In the second stage, global landmark detection is performed, while the third stage refines the landmarks on local patches.}
-    \label{fig:fig1}
-\end{figure*}
-
-\begin{figure*}
-    \centering
-    \includegraphics[width=1\linewidth]{Fig2.pdf}
-    \caption{Illustration of our coarse-to-fine landmark detection framework. The global stage reduces the resolution of the high-resolution craniofacial images for coarse landmark detection. In the local stage, fine-grained landmark detection is performed by cropping the regions centered on each coarse landmark.}
-    \label{fig:fig2}
-\end{figure*}
+![image](Figure/Fig1.png)
+![image](Figure/Fig2.png)
 
 ## 1. Highlights
 * An accurate three-stage framework for landmark detection from 3D medical images
@@ -49,12 +37,7 @@ python3 main.py --resume ./SavePath/main/UNet3D/model_best.ckpt --test_flag 0 # 
 ```
 
 ## 4. Landmark detection Visualization
-\begin{figure}
-    \centering
-    \includegraphics[width=1\linewidth]{Fig7.pdf}
-    \caption{Visualization of landmarks on CT and CBCT dataset. The green dots denote ground truth landmarks, the red dots denote predicted landmarks.}
-    \label{fig:fig7}
-\end{figure}
+![image](Figure/Fig7.png)
 
 ## 5. Contact
 
